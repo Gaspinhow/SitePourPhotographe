@@ -1,0 +1,245 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; 
+    color: #333; 
+}
+.center-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+header {
+    background-color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.hero {
+    background-color: #f6f6f6; 
+    color: #333; 
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery a {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#a-propos {
+    background-color: #f6f6f6;
+    color: #333; 
+    padding: 100px 0;
+    text-align: center;
+}
+
+.a-propos-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.a-propos-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.a-propos-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.a-propos-content ul li {
+    margin-bottom: 10px;
+}
+
+.a-propos-content ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.a-propos-content ul li a:hover {
+    color: #ff4500; 
+}
+
+.a-propos-content ul li a img {
+    width: 20px; 
+    height: auto; 
+    margin-right: 5px; 
+    vertical-align: middle;
+    transition: width 0.3s; 
+}
+
+.a-propos-content ul li a:hover img {
+    width: 25px; 
+}
+
+footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+a[href^="#"] {
+    color: #333; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+a[href^="#"]:hover {
+    color: #ff4500; 
+}
+
+@media screen and (max-width: 992px) {
+   
+    .logo img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+   
+    .a-propos-content h2 {
+        font-size: 24px;
+    }
+}
+.profile-picture {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 0 auto 20px;
+    position: relative; 
+}
+.profile-picture img {
+    width: auto; 
+    height: 100%; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 50%; 
+}
+/* Style du lien vers le formulaire dans le footer */
+/* Style du lien vers le formulaire dans le footer */
+
+/* Style du lien vers le formulaire dans le footer */
+ a.contact-link {
+    position: relative; /* Position relative pour les pseudo-éléments */
+    color: #666; /* Couleur de texte grise */
+    text-decoration: none; /* Supprimer les soulignements */
+    padding-left: 10px; /* Ajouter un espace à gauche du lien */
+}
+
+/* Pseudo-élément pour créer la bande grise */
+ a.contact-link::before {
+    content: ''; /* Ajoute un contenu vide */
+    position: absolute; /* Position absolue par rapport au lien */
+    top: 0; /* Aligner en haut du lien */
+    left: 0; /* Aligner à gauche du lien */
+    width: 100%; /* Largeur égale au lien */
+    height: 100%; /* Hauteur égale au lien */
+    background-color: #f6f6f6; /* Couleur de la bande grise */
+    z-index: -1; /* Envoyer en arrière-plan par rapport au texte */
+}
+/* Style du formulaire */
+form {
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+    padding: 20px; /* Espacement intérieur du formulaire */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #f6f6f6; /* Fond gris très clair */
+}
+
+/* Style des étiquettes */
+label {
+    display: block; /* Afficher les étiquettes sur une nouvelle ligne */
+    margin-bottom: 5px; /* Espacement en bas de chaque étiquette */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+select {
+    width: 100%; /* Largeur du champ de saisie */
+    padding: 8px; /* Espacement intérieur du champ de saisie */
+    margin-bottom: 10px; /* Espacement en bas de chaque champ de saisie */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis */
+    box-sizing: border-box; /* La largeur inclut la bordure et le remplissage */
+}
+
+/* Style du bouton Envoyer */
+button[type="submit"] {
+    background-color: #333; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border: none; /* Supprimer la bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur au survol */
+}
+
+/* Au survol, assombrir le bouton */
+button[type="submit"]:hover {
+    background-color: #444; /* Nouvelle couleur de fond */
+}
+
+/* Réinitialisation des styles pour les éléments de formulaire par défaut */
+input,
+select,
+button {
+    font-family: Arial, sans-serif; /* Police de caractères par défaut */
+    font-size: 16px; /* Taille de police par défaut */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact - Portfolio de Sacha Nahum</title>
+    <link rel="stylesheet" href="SiteSacha.css">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo"><img src="Logo.png" alt="Logo"></a>
+</header>
+
+<main>
+    <h1>Contactez-nous</h1>
+    <form action="traitement.php" method="post">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+        
+        <label for="projet">Projet préféré :</label>
+        <select id="projet" name="projet">
+            <option value="Indonésie">Indonésie</option>
+            <option value="Thaïlande">Thaïlande</option>
+            <option value="Musique">Musique</option>
+            <option value="Italie">Italie</option>
+            <option value="Laponie">Laponie</option>
+            <option value="Bagatelle">Bagatelle</option>
+            <option value="Kanye">Kanye</option>
+            <!-- Ajoute d'autres options pour les projets -->
+        </select>
+        
+        <button type="submit">Envoyer</button>
+    </form>
+</main>
+
+
+<footer>
+    <p>&copy; 2024 Sacha Nahum</p>
+</footer>
+
+</body>
+</html>
